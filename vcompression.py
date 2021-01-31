@@ -10,6 +10,7 @@ files = os.listdir()
 images = [file for file in files if file.endswith(
     ('jpg', 'png')) and '' in file]
 
+# Create "Compressed" folder to put the compressed images into
 os.mkdir("Compressed")
 for image in images:
     image_name = image.split('.')[0]
@@ -25,6 +26,7 @@ files = os.listdir()
 images = [file for file in files if file.endswith(
     ('jpg', 'png')) and '' in file]
 
+# Creates a "WebP" folder inside the "Compressed" folder to put the WebP conversions into
 os.mkdir("WebP")
 
 for image in images:
